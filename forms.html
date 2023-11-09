@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required>
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" name="data_nasc" id="data_nasc" required>
+                <br>
+                <label for="cpf">CPF</label>
+                <input type="cpf" name="cpf" id="cpf" minlength="11" maxlength="11" required>
+                <input type="submit">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Boletim de CyberSecurity</legend>
+                <label for="nome2">Nome</label>
+                <input type="text" name="nome2" id="nome2">    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="reclamacao">Reclamação</label>
+                <textarea name="reclamacao" id="reclamacao" cols="30" rows="10"></textarea>
+                <input type="submit">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Login e Senha</legend>
+                <label for="usu">Usuário</label>
+                <input type="email" name="usu" id="usu"required>
+                <br>
+                <label for="passw">Senha</label>
+                <input type="password" required>
+                <input type="submit">
+            
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Satisfação</legend>
+                <label for="email2">Email</label>
+                <input type="email" name="email2" id="email2" required>
+                <label for="satisfacao">Satisfação de 1/5</label>
+                <input type="radio" name="1" id="1">
+                <input type="radio" name="2" id="1">
+                <input type="radio" name="3" id="1">
+                <input type="radio" name="4" id="1">
+                <input type="radio" name="5" id="1">
+                <br>
+                <label for="exper">Experiência</label>
+                <br>
+                <textarea name="exper2" id="exper" cols="30" rows="10"></textarea>
+                <input type="submit" required>
+        </fieldset>
+    </form>
+
+    <div style="text-align: center;">
+        <form action="">
+            <fieldset>
+                <legend>Recuperação de Senha</legend>
+                    <label for="email3">Email</label>
+                    <input type="email" name="email3" id="email3" required>
+                    <br>
+                    <label for="code">Código de Verificação</label>
+                    <input type="code" name="code" id="code" required minlength="5" maxlength="5" placeholder="12345">
+                    <br>
+                    <label for="nvpsw">Nova Senha</label>
+                    <input type="password" name="nvpsw" id="nvpsw">
+                    <br>
+                    <input type="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
